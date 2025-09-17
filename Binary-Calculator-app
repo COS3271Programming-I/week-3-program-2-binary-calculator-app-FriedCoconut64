@@ -1,0 +1,22 @@
+package myMain;
+
+import java.util.Scanner;
+
+public class MainClass {
+	static Scanner userinput = new Scanner(System.in);
+	public static void main(String[] args) {
+			String x;
+			String y;
+			System.out.print("Please choose a number in binary:");
+			x = userinput.nextLine();
+			System.out.print("Please choose another number (same req.):");
+			y = userinput.nextLine();
+			
+			System.out.format("Sum is : " + Integer.toBinaryString(Integer.parseInt(x,2) + Integer.parseInt(y,2)));
+			System.out.format("\nDifference is : " + Integer.toBinaryString(Integer.parseInt(x,2) - Integer.parseInt(y,2)));
+			System.out.format("\nProduct is : " + Integer.toBinaryString(Integer.parseInt(x,2) * Integer.parseInt(y,2)));
+			System.out.format("\nQuotient is : " + Integer.toBinaryString(Integer.parseInt(x,2) / Integer.parseInt(y,2)));
+	
+	}
+
+}
